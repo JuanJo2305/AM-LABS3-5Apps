@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kotlin Calculadora Básica"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="30dp"
+        />
+    <EditText
+        android:id="@+id/etValorA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Valor A"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:layout_marginBottom="20dp"
+        />
+
+    <EditText
+        android:id="@+id/etValorB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Valor B"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:layout_marginBottom="20dp"
+        />
+    <EditText
+        android:id="@+id/etValorC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Valor C"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:layout_marginBottom="20dp"
+        />
+    <Button
+        android:id="@+id/btnCalcularSuma"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sumar"
+        android:layout_marginBottom="20dp"
+        />
+    <Button
+        android:id="@+id/btnCalcularResta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Restar"
+        android:layout_marginBottom="20dp"
+        />
+    <Button
+        android:id="@+id/btnCalcularMultiplicacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Multiplicar"
+        android:layout_marginBottom="20dp"
+        />
+    <Button
+        android:id="@+id/btnCalcularDivision"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dividir"
+        android:layout_marginBottom="20dp"
+        />
+
+    <TextView
+        android:id ="@+id/tvResultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Resultado"
+        android:textAlignment="center"
+        />
+
+</LinearLayout>
