@@ -8,6 +8,10 @@ import android.widget.EditText
 import android.widget.TextView
 
 class MainActivity : AppCompatActivity() {
+
+    private val usuarioValido = "admin"
+    private val contrasenaValida = "Uns2025"
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -25,8 +29,14 @@ class MainActivity : AppCompatActivity() {
                 tvResultado.text = "Campos vacíos: por favor completa ambos campos."
                 tvResultado.setTextColor(Color.RED)
             } else {
-                tvResultado.text = "Inicio de sesión exitoso para: $usuario"
-                tvResultado.setTextColor(Color.GREEN)
+
+                if (usuario == usuarioValido && contrasena == contrasenaValida) {
+                    tvResultado.text = "Inicio de sesión exitoso para: $usuario"
+                    tvResultado.setTextColor(Color.GREEN)
+                } else {
+                    tvResultado.text = "Usuario o contraseña incorrectos."
+                    tvResultado.setTextColor(Color.RED)
+                }
             }
         }
     }
